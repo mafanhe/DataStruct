@@ -18,4 +18,4 @@ int main()
     if(!flag) printf("0 0");
 
     return 0;
-}  
+}
