@@ -301,7 +301,7 @@
 
 ###5.2堆的建立
 ##6.huffman树。最优二叉树
-###6.1huffman树的构造,整体复杂度为O（NlogN）
+###6.1huffman树的构造
 
     typedef struct TreeNode *HuffmanTree;
     struct TreeNode{
@@ -314,14 +314,7 @@
       BuildMinHeap(H);  /*将H->Elements[]按权值调整为最小堆*/
       for(i=1;i<H->Size;i++){ /*做H->size-1次合并*/
         T=mallc(sizeof(struct TreeNode)); /*建立新节点*/
-	T->Left=DeleteMin(H);
-	T->Right=DeleteMin(H);
-	T->Weight=T->Left->Weight+T->Right->Weight;
-	Insert(H,T);
+
 
       }
-      T=DeleteMin(H);
-      return T;	
     }
-
-
