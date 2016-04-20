@@ -59,6 +59,7 @@ List *FindKth(int data,List *list){
   }
   return NULL;
 }
+
 void Traversal(List * list){
   List *pt=list;
   //printf("testtest\n" );
